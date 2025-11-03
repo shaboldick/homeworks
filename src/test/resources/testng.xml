@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lesson7 Suite">
+    <test name="All Tests">
+        <classes>
+            <class name="ru.qa.lesson.lesson_7.CalculatorTest"/>
+            <class name="ru.qa.lesson.lesson_7.FactorialTest"/>
+            <class name="ru.qa.lesson.lesson_7.TriangleAreaTest"/>
+            <class name="ru.qa.lesson.lesson_7.ComparisonTest"/>
+        </classes>
+    </test>
+</suite>
