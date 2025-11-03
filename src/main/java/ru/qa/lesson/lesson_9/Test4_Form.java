@@ -40,7 +40,7 @@ public class Test4_Form {
 
             continueButton.click();
 
-            Thread.sleep(3500);
+            Thread.sleep(4000);
 
             System.out.println(" Тест 4 выполнен: форма заполнена и кнопка нажата, открылась форма оплаты");
 
