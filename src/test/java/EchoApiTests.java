@@ -13,7 +13,6 @@ public class EchoApiTests {
         RestAssured.baseURI = "https://postman-echo.com";
     }
 
-    // ✅ GET Request
     @Test
     public void testGetRequest() {
         given()
@@ -28,7 +27,6 @@ public class EchoApiTests {
                 .body("args.age", equalTo("25"));
     }
 
-    // ✅ POST Raw Text — убрана проверка headers
     @Test
     public void testPostRawText() {
         String rawText = "Hello from RestAssured!";
@@ -43,7 +41,6 @@ public class EchoApiTests {
                 .body("data", equalTo(rawText));
     }
 
-    // ✅ POST Form Data — только проверка статуса, если падает
     @Test
     public void testPostFormData() {
         given()
@@ -55,7 +52,6 @@ public class EchoApiTests {
                 .statusCode(200);
     }
 
-    // ✅ PUT Request
     @Test
     public void testPutRequest() {
         given()
@@ -69,7 +65,6 @@ public class EchoApiTests {
                 .body("data.description", equalTo("New description"));
     }
 
-    // ✅ PATCH Request
     @Test
     public void testPatchRequest() {
         given()
@@ -82,7 +77,6 @@ public class EchoApiTests {
                 .body("data.status", equalTo("active"));
     }
 
-    // ✅ DELETE Request
     @Test
     public void testDeleteRequest() {
         given()
