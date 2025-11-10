@@ -88,11 +88,11 @@ public class EchoApiTests {
     @Test
     public void testDeleteRequest() {
         given()
-                .queryParam("user_id", "789")
+                .queryParam("user_id", "780")
                 .when()
                 .delete("/delete")
                 .then()
                 .statusCode(200)
-                .body("args.user_id", equalTo("789"));
+                .body("args.user_id", equalTo("780"));
     }
 }
