@@ -29,7 +29,7 @@ public class Test1_Title extends BaseTest {
         assertTrue(actualText.contains("Онлайн пополнение") && actualText.contains("без комиссии"),
                 "Заголовок не совпадает! Было: " + actualText);
 
-        System.out.println("✅ Тест 1 пройден: заголовок найден и верный");
+        System.out.println(" Тест 1 пройден: заголовок найден и верный");
         System.out.println("Текст заголовка: " + actualText);
     }
 }
