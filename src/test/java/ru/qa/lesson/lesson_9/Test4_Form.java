@@ -20,10 +20,8 @@ public class Test4_Form extends BaseTest {
             // Игнорируем
         }
 
-        // Находим форму
         WebElement form = driver.findElement(By.id("pay-connection"));
 
-        // Находим поля и заполняем их
         WebElement phoneInput = form.findElement(By.id("connection-phone"));
         phoneInput.clear();
         phoneInput.sendKeys("297777777");
@@ -32,13 +30,9 @@ public class Test4_Form extends BaseTest {
         sumInput.clear();
         sumInput.sendKeys("100");
 
-        // Находим и нажимаем кнопку "Продолжить"
         WebElement continueButton = form.findElement(By.xpath(".//button[contains(text(), 'Продолжить')]"));
         continueButton.click();
 
-        // Проверяем, что открылась новая страница (форма оплаты)
-        // Можно проверить, например, наличие элемента на новой странице
-        // Здесь мы просто проверим, что URL изменился (как в Test3)
         String currentUrl = driver.getCurrentUrl();
         String originalUrl = "https://mts.by";
 
